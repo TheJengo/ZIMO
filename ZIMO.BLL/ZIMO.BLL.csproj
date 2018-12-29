@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7704085-85C4-4D03-B400-4F74CCC6D030}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZIMO.BLL</RootNamespace>
+    <AssemblyName>ZIMO.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General Operations\BorrowController.cs" />
+    <Compile Include="General Operations\DepartmentController.cs" />
+    <Compile Include="General Operations\GarbageController.cs" />
+    <Compile Include="General Operations\ItemController.cs" />
+    <Compile Include="General Operations\RoleController.cs" />
+    <Compile Include="General Operations\StockController.cs" />
+    <Compile Include="Login Operations\ILoginController.cs" />
+    <Compile Include="Login Operations\LoginController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Operations\AdminController.cs" />
+    <Compile Include="User Operations\ChargedController.cs" />
+    <Compile Include="User Operations\IAdminController.cs" />
+    <Compile Include="User Operations\IChargedController.cs" />
+    <Compile Include="User Operations\ISalesController.cs" />
+    <Compile Include="User Operations\IUserController.cs" />
+    <Compile Include="User Operations\SalesController.cs" />
+    <Compile Include="User Operations\UserController.cs" />
+    <Compile Include="Utils\CryptoUtil.cs" />
+    <Compile Include="Utils\ReportUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZIMO.DAL\ZIMO.DAL.csproj">
+      <Project>{5886d787-323d-4ff9-adb0-b4056cd9cab9}</Project>
+      <Name>ZIMO.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZIMO.Entities\ZIMO.Entities.csproj">
+      <Project>{cb746bf7-b5fe-4092-9c29-100b0058354e}</Project>
+      <Name>ZIMO.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next">
+      <Version>3.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
