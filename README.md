@@ -27,7 +27,7 @@ Used techonlogies are listed below:
     
     • Bcrypt.Net-Next 3.1.2.0
 
-For more information on this project you can read the project report(for now its Turkish):<a href="">Report</a>
+For more information on this project you can read the project report(for now its Turkish):<a href="https://drive.google.com/open?id=1k-IoaIe7zvE557effeOIhnO3d5tzYYzW">Report</a>
 
 
 # Özet
@@ -57,4 +57,4 @@ Bu projede kullanılan teknolojiler aşağıda listelenmiştir:
     
     • Bcrypt.Net-Next 3.1.2.0
   
-Proje Hakkında daha fazla bilgi almak için proje raporunu okuyabilirsiniz:  <a href="">Rapor</a>
+Proje Hakkında daha fazla bilgi almak için proje raporunu okuyabilirsiniz:  <a href="https://drive.google.com/open?id=1k-IoaIe7zvE557effeOIhnO3d5tzYYzW">Rapor</a>
